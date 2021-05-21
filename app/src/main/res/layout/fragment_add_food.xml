@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_food_page_upload_button"
+            android:background="@color/black"
+            android:textColor="@color/white"
+            android:padding="@dimen/default_margin"
+            style="@style/TitleTextStyle"/>
+
+        <ImageView
+            android:id="@+id/preview_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/oeuf" />
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:hint="@string/add_food_page_Name_input"
+        android:paddingLeft="@dimen/default_margin"
+        style="@style/DefaultTextStyle" />
+    <EditText
+        android:id="@+id/description_input"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:hint="@string/add_food_page_description_input"
+        android:paddingLeft="@dimen/default_margin"
+        style="@style/DefaultTextStyle" />
+    <Spinner
+        android:id="@+id/calorie_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:entries="@array/add_food_page_calorie_input"
+        android:paddingLeft="@dimen/default_margin"
+ />
+    <Spinner
+        android:id="@+id/digestion_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:entries="@array/add_food_page_digestion_input"
+        android:paddingLeft="@dimen/default_margin"
+       />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/LightGray"
+        android:text="@string/add_food_page_confirm_button"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+     />
+</LinearLayout>

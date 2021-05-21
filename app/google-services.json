@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "681135418952",
+    "project_id": "healthy-fodd",
+    "storage_bucket": "healthy-fodd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:681135418952:android:7f0ddd5f554ad55c3db27d",
+        "android_client_info": {
+          "package_name": "com.example.wided"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "681135418952-2bl37635p25bjtr1ed9f4831vafah30j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD43NBzBrAyY_fvFhM5mBzjQrrorI_VGXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "681135418952-2bl37635p25bjtr1ed9f4831vafah30j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
