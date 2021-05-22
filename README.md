@@ -13,6 +13,7 @@ J'ai réalisé cette application portant sur les repas sain et équilibré. Vous
 - Création de l'émulateur.
 
 ## Consignes respectées :
+- Appel Api Rest ( je n'ai pas réussi a trouver une Api Rest food public avec des images mais le code fonctionne  )
 - Ajout des ressources
 - Écran : Home , My favorite et Add 
 - Une RecyclerView horizontal et vertical
