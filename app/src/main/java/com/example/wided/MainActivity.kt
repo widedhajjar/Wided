@@ -2,22 +2,50 @@ package com.example.wided
 
 
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.example.wided.fragments.AddFoodFragment
 import com.example.wided.fragments.CoupDeCoeurFragment
 import com.example.wided.fragments.HomeFragment
+import com.example.wided.repository.Repository
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var viewModel: MainViewModel
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val repository=Repository()
+        val viewModelFactory = MainViewModelFactory(repository)
+        viewModel = ViewModelProvider(this, viewModelFactory ).get(MainViewModel::class.java)
+        viewModel.getFood()
+        viewModel.myResponse.observe(this, Observer { response ->
+            if (response.isSuccessful){
+            Log.d("Response", response.body()?.id.toString())
+            Log.d("Response",response.body()?.name!!)
+            Log.d("Response", response.body()?.image!!)
+            Log.d("Response", response.body()?.content!!)
+            Log.d("Response", response.body()?.link!!)
+            }else{
+
+                Log.d("Response", response.errorBody().toString())
+
+            }
+        })
+
+
+
+
+
+
 
         loadFragment(HomeFragment(this), R.string.home_page_title)
 
@@ -50,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    }
+}
 
     private fun loadFragment(fragment:Fragment,string: Int) {
         //charger notre FoodRepository
