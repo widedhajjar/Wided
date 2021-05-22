@@ -20,7 +20,7 @@ class FoodAdapter(
         val foodImage = view.findViewById<ImageView>(R.id.image_item)
         val foodName : TextView?= view.findViewById(R.id.name_item)
         val foodDescription : TextView?= view.findViewById(R.id.description_item)
-       val  starIcon= view.findViewById<ImageView>(R.id.star_icon)
+        val starIcon= view.findViewById<ImageView>(R.id.star_icon)
 
 
 
@@ -38,7 +38,7 @@ class FoodAdapter(
         //recuperer les informations  du "food"
         val currentFood=foodList[position]
 
-        //recuperer le respository
+        //recuperer le repository
         val repo = FoodRepository()
 
 

@@ -19,6 +19,8 @@ class CoupDeCoeurFragment (
     override fun onCreateView (inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
          val view = inflater?.inflate(R.layout.fragment_coup_de_coeur,container,false)
 
+
+
         //recuperer ma recyclerview
         val coupdecoeurRecyclerView = view.findViewById<RecyclerView>(R.id.coup_de_coeur_recycler_list)
         coupdecoeurRecyclerView.adapter = FoodAdapter(context,foodList.filter { it.liked }, R.layout.item_vertical_food)
