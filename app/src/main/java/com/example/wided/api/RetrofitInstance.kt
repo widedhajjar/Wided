@@ -14,7 +14,7 @@ object RetrofitInstance {
 
 
 
-            var cache: Cache = Cache(File(context?.cacheDir,"responses"), 10 * 1024 * 1024) //10MiB
+            var cache = Cache(File(context?.cacheDir,"responses"), 10 * 1024 * 1024) //10MiB
             var okHttpClient: OkHttpClient = OkHttpClient().newBuilder()
                 .cache(cache)
                 .build()
