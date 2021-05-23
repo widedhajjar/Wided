@@ -24,7 +24,11 @@ J'ai réalisé cette application portant sur les repas sain et équilibré. Vous
 - Utilisation du Singleton Pattern
 - Utilisation de Glide pour récuperer l'image à partir de son lien
 - Utilisation du site Github 
+- Notification Push (Firebase)
 - Application fonctionne toujours en mode avion grâce au Cache 
+
+![](images/Notification.png)
+
 ![](images/Cache.png)
 
 
