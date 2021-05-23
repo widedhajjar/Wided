@@ -20,6 +20,7 @@ J'ai réalisé cette application portant sur les repas sain et équilibré. Vous
 - Une RecyclerView horizontal et vertical
 - Une activitée pour afficher en détail un élément
 - Utilisation du MVVM
+- Utilisation du MVP
 - Utilisation du Singleton Pattern
 - Utilisation de Glide pour récuperer l'image à partir de son lien
 - Utilisation du site Github 
