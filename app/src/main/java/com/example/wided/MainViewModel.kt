@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 import retrofit2.Response
 
 class MainViewModel (private val repository: Repository): ViewModel() {
-
+//MVVM
     val myResponse: MutableLiveData<Response<Food>> = MutableLiveData()
 
     fun getFood(){

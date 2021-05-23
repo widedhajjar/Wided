@@ -16,7 +16,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
 class MainActivity : AppCompatActivity() {
-
+//MVVM
     private lateinit var viewModel: MainViewModel
 
 

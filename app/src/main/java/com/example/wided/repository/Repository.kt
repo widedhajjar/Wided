@@ -5,7 +5,7 @@ import com.example.wided.model.Food
 import retrofit2.Response
 
 class Repository {
-
+//repository
     suspend fun getFood(): Response<Food> {
         return RetrofitInstance.api.getFood()
     }
