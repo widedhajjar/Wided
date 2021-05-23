@@ -1,0 +1,40 @@
+{
+  "foods" : {
+    "6e73bcf0-fda8-454f-9e6f-ca681ae1dabe" : {
+      "calorie" : "Calorie : Moyenne",
+      "description" : "Un fruit riche en fibres, permet de faciliter la digestion",
+      "digestion" : "Digestion : Rapide",
+      "id" : "6e73bcf0-fda8-454f-9e6f-ca681ae1dabe",
+      "imageUrl" : "https://firebasestorage.googleapis.com/v0/b/healthy-fodd.appspot.com/o/e2f1eaa3-0c09-49d8-9612-4b6bf0321374.jpg?alt=media&token=8d05a270-4126-43e0-83a0-3b4c798f47d0",
+      "liked" : true,
+      "name" : "Grenade"
+    },
+    "food1" : {
+      "calorie" : "Moyenne",
+      "description" : "Le lait est un liquide biologique comestible généralement de couleur blanchâtre produit par les glandes mammaires des mammifères femelles.",
+      "digestion" : "Faible",
+      "id" : "food1",
+      "imageUrl" : "https://cdn.pixabay.com/photo/2016/12/06/18/27/milk-1887234__480.jpg",
+      "liked" : true,
+      "name" : "Lait"
+    },
+    "food3" : {
+      "calorie" : "Elevée",
+      "description" : "Et pour cause, l'avoine est une céréale très complète. Elle contient des substances essentielles nécessaires pour une bonne alimentation.",
+      "digestion" : "moyenne",
+      "id" : "food3",
+      "imageUrl" : "https://media.istockphoto.com/photos/rolled-oats-or-oat-flakes-in-wooden-bowl-on-stone-background-picture-id874247746?b=1&k=6&m=874247746&s=170667a&w=0&h=qmMJnRkdCb6x88KG4wR34ur_RrOOn-feRdY9XdnrcF4=",
+      "liked" : false,
+      "name" : "Flocon d'avoine"
+    },
+    "food5" : {
+      "calorie" : "Moyenne",
+      "description" : "IL A PLUS D’UN ATOUT NUTRITIONNEL DANS SA COQUILLE !",
+      "digestion" : "moyenne",
+      "id" : "food5",
+      "imageUrl" : "https://media.istockphoto.com/photos/closeup-group-of-raw-egg-put-on-wooden-timber-boardvintage-and-art-picture-id1024789902?k=6&m=1024789902&s=612x612&w=0&h=ycxCUe1kfdqy0uUkX8vg-tUV8nwz9ff33M5BpGgq7Ts=",
+      "liked" : false,
+      "name" : "Oeuf"
+    }
+  }
+}

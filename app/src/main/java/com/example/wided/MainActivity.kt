@@ -2,7 +2,11 @@ package com.example.wided
 
 
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.util.Log
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
@@ -13,9 +17,16 @@ import com.example.wided.fragments.CoupDeCoeurFragment
 import com.example.wided.fragments.HomeFragment
 import com.example.wided.repository.Repository
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import com.google.firebase.messaging.FirebaseMessagingService
 
 
 class MainActivity : AppCompatActivity() {
+
+
+
+
+
+
 //MVVM
     private lateinit var viewModel: MainViewModel
 
@@ -25,7 +36,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        //Push
+     val myFirebaseMessagingService = FirebaseMessagingService()
 
+
+//MVVM
 
         val repository = Repository()
         val viewModelFactory = MainViewModelFactory(repository)
@@ -102,7 +117,10 @@ class MainActivity : AppCompatActivity() {
             transaction.commit()
         }
 
+
     }
+
+
 
 
 }
