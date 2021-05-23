@@ -14,6 +14,7 @@ J'ai réalisé cette application portant sur les repas sain et équilibré. Vous
 
 ## Consignes respectées :
 - Appel Api Rest ( je n'ai pas réussi a trouver une Api Rest food public avec des images mais le code fonctionne  )
+- Cache Okhttp
 - Ajout des ressources
 - Écran : Home , My favorite et Add 
 - Une RecyclerView horizontal et vertical
@@ -21,6 +22,9 @@ J'ai réalisé cette application portant sur les repas sain et équilibré. Vous
 - Utilisation du Singleton Pattern
 - Utilisation de Glide pour récuperer l'image à partir de son lien
 - Utilisation du site Github 
+- Application fonctionne toujours en mode avion grâce au Cache 
+![](images/Cache.png)
+
 
 ## Fonctionnalités :
 
