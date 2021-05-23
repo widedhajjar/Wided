@@ -24,6 +24,8 @@ class HomeFragment(
 
 
 
+
+
         //recuperer le recyclerview
         val horizontalRecyclerView=view.findViewById<RecyclerView>(R.id.horizontal_recycler_view)
         horizontalRecyclerView.adapter= FoodAdapter(context, foodList.filter { !it.liked }, R.layout.item_horizental_food)
@@ -35,5 +37,7 @@ class HomeFragment(
 
         return view
     }
+
+
 }
 
